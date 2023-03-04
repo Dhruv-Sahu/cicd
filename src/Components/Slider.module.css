@@ -1,0 +1,371 @@
+
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:300|Outfit);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Outfit:wght@100;300;400;500;600;700;800&display=swap');
+
+div {
+  border-color: #eee;
+}
+
+.wordCarousel {
+  background-color: #112B3C;
+  font-size: 36px;
+  font-weight: 10;
+  color: #eee;
+}
+
+.wordCarousel span {
+  position: relative;
+  /* float: left; */
+  margin-left: 30px;
+  justify-content: center;
+  color: rgb(255, 253, 228);
+  border-color: aliceblue;
+}
+
+.wordCarousel div {
+  overflow: hidden;
+  position: relative;
+  float: right;
+  height: 65px;
+  padding-top: 10px;
+  margin-top: -10px;
+}
+
+.wordCarousel div li {
+  font-family:  "Outfit",Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,sans-serif;
+  color: #eee;
+  font-weight: 450;
+  /* padding: 0 10px; */
+  height: 45px;
+  margin-bottom: 45px;
+  display: block;
+}
+
+.flip2 {
+  -webkit-animation: flip2 10s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+  animation: flip2 10s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+}
+
+.flip3 {
+  -webkit-animation: flip3 20s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+  animation: flip3 20s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+}
+
+.flip4 {
+  -webkit-animation: flip4 30s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+  animation: flip4 30s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+}
+
+.flip5 {
+  -webkit-animation: flip5 40s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+  animation: flip5 40s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+}
+
+@-webkit-keyframes flip2 {
+  0% {
+    margin-top: -180px;
+  }
+
+  5% {
+    margin-top: -90px;
+  }
+
+  50% {
+    margin-top: -90px;
+  }
+
+  55% {
+    margin-top: 0px;
+  }
+
+  99.99% {
+    margin-top: 0px;
+  }
+
+  100% {
+    margin-top: -180px;
+  }
+}
+
+@keyframes flip2 {
+  0% {
+    margin-top: -180px;
+  }
+
+  5% {
+    margin-top: -90px;
+  }
+
+  50% {
+    margin-top: -90px;
+  }
+
+  55% {
+    margin-top: 0px;
+  }
+
+  99.99% {
+    margin-top: 0px;
+  }
+
+  100% {
+    margin-top: -180px;
+  }
+}
+
+@-webkit-keyframes flip3 {
+  0% {
+    margin-top: -270px;
+  }
+
+  5% {
+    margin-top: -180px;
+  }
+
+  33% {
+    margin-top: -180px;
+  }
+
+  38% {
+    margin-top: -90px;
+  }
+
+  66% {
+    margin-top: -90px;
+  }
+
+  71% {
+    margin-top: 0px;
+  }
+
+  99.99% {
+    margin-top: 0px;
+  }
+
+  100% {
+    margin-top: -270px;
+  }
+}
+
+@keyframes flip3 {
+  0% {
+    margin-top: -270px;
+  }
+
+  5% {
+    margin-top: -180px;
+  }
+
+  33% {
+    margin-top: -180px;
+  }
+
+  38% {
+    margin-top: -90px;
+  }
+
+  66% {
+    margin-top: -90px;
+  }
+
+  71% {
+    margin-top: 0px;
+  }
+
+  99.99% {
+    margin-top: 0px;
+  }
+
+  100% {
+    margin-top: -270px;
+  }
+}
+
+@-webkit-keyframes flip4 {
+  0% {
+    margin-top: -360px;
+  }
+
+  5% {
+    margin-top: -270px;
+  }
+
+  25% {
+    margin-top: -270px;
+  }
+
+  30% {
+    margin-top: -180px;
+  }
+
+  50% {
+    margin-top: -180px;
+  }
+
+  55% {
+    margin-top: -90px;
+  }
+
+  75% {
+    margin-top: -90px;
+  }
+
+  80% {
+    margin-top: 0px;
+  }
+
+  99.99% {
+    margin-top: 0px;
+  }
+
+  100% {
+    margin-top: -360px;
+  }
+}
+
+@keyframes flip4 {
+  0% {
+    margin-top: -360px;
+  }
+
+  5% {
+    margin-top: -270px;
+  }
+
+  25% {
+    margin-top: -270px;
+  }
+
+  30% {
+    margin-top: -180px;
+  }
+
+  50% {
+    margin-top: -180px;
+  }
+
+  55% {
+    margin-top: -90px;
+  }
+
+  75% {
+    margin-top: -90px;
+  }
+
+  80% {
+    margin-top: 0px;
+  }
+
+  99.99% {
+    margin-top: 0px;
+  }
+
+  100% {
+    margin-top: -360px;
+  }
+}
+
+@-webkit-keyframes flip5 {
+  0% {
+    margin-top: -450px;
+  }
+
+  5% {
+    margin-top: -360px;
+  }
+
+  20% {
+    margin-top: -360px;
+  }
+
+  25% {
+    margin-top: -270px;
+  }
+
+  40% {
+    margin-top: -270px;
+  }
+
+  45% {
+    margin-top: -180px;
+  }
+
+  60% {
+    margin-top: -180px;
+  }
+
+  65% {
+    margin-top: -90px;
+  }
+
+  80% {
+    margin-top: -90px;
+  }
+
+  85% {
+    margin-top: 0px;
+  }
+
+  99.99% {
+    margin-top: 0px;
+  }
+
+  100% {
+    margin-top: -450px;
+  }
+}
+
+@keyframes flip5 {
+  0% {
+    margin-top: -450px;
+  }
+
+  5% {
+    margin-top: -360px;
+  }
+
+  20% {
+    margin-top: -360px;
+  }
+
+  25% {
+    margin-top: -270px;
+  }
+
+  40% {
+    margin-top: -270px;
+  }
+
+  45% {
+    margin-top: -180px;
+  }
+
+  60% {
+    margin-top: -180px;
+  }
+
+  65% {
+    margin-top: -90px;
+  }
+
+  80% {
+    margin-top: -90px;
+  }
+
+  85% {
+    margin-top: 0px;
+  }
+
+  99.99% {
+    margin-top: 0px;
+  }
+
+  100% {
+    margin-top: -450px;
+  }
+}
+@media only screen and (max-width: 600px){
+  .wordCarousel{
+    font-size: 20px;
+  }
+}

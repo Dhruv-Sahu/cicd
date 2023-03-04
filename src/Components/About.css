@@ -1,0 +1,9 @@
+
+@media only screen and (max-width: 700px) {
+    .frame-video{
+        width: 30px;
+    }
+    .heading-about{
+        font-size: 25px;
+    }
+  }

@@ -1,0 +1,10 @@
+
+@media only screen and (max-width: 600px) {
+    .carousel-control-prev-icon{
+      display: none !important;
+      
+    }
+    .carousel-control-next-icon{
+        display: none !important;
+    }
+  }

@@ -1,0 +1,38 @@
+.contenttop span:before{
+    content: '';
+    animation: animate infinite 8s;
+    color: white;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .vid {
+      width: 50%;
+
+    }
+  }
+
+@keyframes animate {
+    0%{
+        content: 'Revolutionary';
+        animation-delay: 2s;
+    }
+    30%{
+        content: 'Bio-Tech';
+    }
+    40%{
+        content: 'Startup';
+    }
+    60%{
+        content: 'Air-purifier';
+    }
+    80%{
+        content: 'Algaes';
+    }
+    100%{
+        content: 'Climec Labs';
+        animation-delay: 2s;
+    }
+}
+
+

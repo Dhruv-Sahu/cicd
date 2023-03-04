@@ -1,0 +1,155 @@
+@import url("https://rsms.me/inter/inter.css");
+.customerBG{
+
+  
+background-color: white;
+}
+.container-customer {
+  --color-gray: #737888;
+  --color-lighter-gray: #e3e5ed;
+  --color-light-gray: #f7f7fa;
+}
+
+
+.QRImage{
+  height: 15rem;
+  width: 15rem;
+}
+
+.container-customer {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: "Inter var", sans-serif;
+  }
+}
+
+.image-customer1{
+  margin-right:75px ;
+  display: block;
+  width: 100%;
+  align-items: center;
+}
+
+.container-customer {
+  margin: 0;
+}
+
+.container-customer h1 {
+  margin-bottom: 1rem;
+}
+
+.container-customer p {
+  color: var(--color-gray);
+}
+
+.container-customer hr {
+  height: 1px;
+  width: 100%;
+  background-color: var(--color-light-gray);
+  border: 0;
+  margin: 2rem 0;
+}
+
+.container-customer {
+  max-width: 40rem;
+  padding: 10vw 2rem 0;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+.form-customer {
+  display: grid;
+  grid-gap: 1rem;
+}
+
+.field-customer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--color-lighter-gray);
+  padding: .5rem;
+  border-radius: .25rem;
+}
+
+.field__label-customer {
+  color: var(--color-gray);
+  font-size: 0.6rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 0.25rem
+}
+
+.field__input-customer {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  font-weight: bold;
+  font-size: 1rem;
+  width: 100%;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: transparent;
+}
+.field-customer:focus-within {
+  border-color: #000;
+}
+
+.fields-customer {
+  display: grid;
+  grid-gap: 1rem;
+}
+.fields--2customer {
+  grid-template-columns: 1fr 1fr;
+}
+.fields--3customer {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.image-customer{
+  height: fit-content;
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+
+}
+
+.button-customer {
+  background-color: #000;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 600;
+  display: block;
+  color: #fff;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0.7rem;
+  border: 0;
+  cursor: pointer;
+  outline: 0;
+  margin: 10px;
+}
+.button-customer:focus-visible {
+  background-color: rgb(125, 122, 122);
+}
+
+.flex-container1{
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  
+}
+
+.flex-container2{
+  display: flex;
+  flex-direction: row;
+}
