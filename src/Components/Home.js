@@ -1,7 +1,7 @@
 import React from 'react'
 // import video from '../Assets/Image/pexels1.mp4'
 // import video from 'https://ik.imagekit.io/DamnDaniel/pexels1.mp4'
-
+import ReactGa from 'react-ga4'
 import About from './About'
 import Slider from './Slider'
 import Us from './Us'
@@ -13,7 +13,18 @@ import Footer from './Footer'
 import Product from './Product'
 import './Home.css'
 
+
 const Home = () => {
+
+  const handleBookNowClick = () => {
+    console.log("book now clicked")
+    ReactGa.event({
+      category: "Button Clicked from Hero Page",
+      action: "Hero BookNow Button",
+      label: "Book Now Button from Hero Page is clicked"
+    });
+  };
+
   return (
     <>
       <section id="hero">
@@ -40,8 +51,7 @@ const Home = () => {
                     <h2 className="animate__animated animate__fadeInDown contenttop"><span></span></h2>
                     <p className="animate__animated animate__fadeInUp" style={{ fontWeight: "450", fontSize: "17px" }}>Climec Labs is an organic brand that offers an eco-friendly yet affordable solution to enhance indoor air quality. We take it upon ourselves to add a fresh breath of air into your lives!</p>
                     <div>
-
-                      <a href="#book-an-aerem" className="btn-book animate__animated animate__fadeInUp scrollto" style={{ borderRadius: '10px' }}>Book Now!</a>
+                      <a href="#book-an-aerem" className="btn-book animate__animated animate__fadeInUp scrollto" style={{ borderRadius: '10px' }} onClick={handleBookNowClick}>Book Now!</a>
                     </div>
                   </div>
                 </div>

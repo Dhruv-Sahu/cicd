@@ -1,9 +1,11 @@
 import React, { useState } from 'react'
+import ReactGa from 'react-ga4'
 import ap from '../Assets/Image/A1min.png'
 import ag from '../Assets/Image/AeremGo.gif'
 import a1 from '../Assets/Image/a12.png'
 import ak from '../Assets/Image/NewPurifier2.jpeg'
 import './Product.css'
+
 
 const Product = () => {
   let AEREM1 = { "firstName": "AEREM Model A", "description": "Air quality of a jungle inside your four walls!", "point1": 'Oxygen generation of 22 trees!.', "point2": 'Viable & Eco-Friendly Solution.', "point3": 'Subscription cost of the filter is as low as Rs. 1.', "description2": "India's first Oxygen generating air purifier Provides you with oxygen worth of 22 trees while sequestering carbon dioxide and creating hyperlocal clean air zone." };
@@ -23,14 +25,34 @@ const Product = () => {
     setAeremcolor({ backgroundColor: "#1fc050", color: "white" })
     setAeremgocolor({ backgroundColor: "black", color: "white" })
   }
+  const handleBookNowClick = () => {
+    console.log("FAQ Button Clicked")
+    ReactGa.event({
+      category: "Button Clicked from Product Page",
+      action: "Product FAQ Button",
+      label: "FAQ Button from Product Page is clicked"
+    });
+  };
+  const handleFAQClick = () => {
+    console.log("book now clicked from product")
+    ReactGa.event({
+      category: "Button Clicked from Product Page",
+      action: "Product BookNow Button",
+      label: "Book Now Button from Product Page is clicked"
+    });
+  };
+  const handleView = () => {
+    console.log("Product see button")
+    ReactGa.event({
+      category: "Button for next pic",
+      action: "Product Image slider button",
+      label: "Product page image Button to see next Product Page is clicked"
+    });
+  };
   return (
     <>
       <section id="events" className="events" style={{ padding: "25px 0px 60px 0px" }}>
         <div className="container ">
-
-
-
-
           <div className="section-title" >
             <pre style={{ overflow: "hidden" }}><h2>Get Your<span> AEREM!</span></h2></pre>
           </div>
@@ -53,10 +75,10 @@ const Product = () => {
 
                       </div>
                     </div>
-                    <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev" data-bs-interval="false"><span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev" data-bs-interval="false" onClick={handleView}><span className="carousel-control-prev-icon" aria-hidden="true"></span>
                       <span className="visually-hidden">Previous</span>
                     </button>
-                    <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next" data-bs-interval="false">
+                    <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next" data-bs-interval="false" onClick={handleView}>
                       <span className="carousel-control-next-icon" aria-hidden="true"></span>
                       <span className="visually-hidden">Next</span>
                     </button>
@@ -81,10 +103,9 @@ const Product = () => {
                     {product.description2}
                   </p>
                   <div className='d-flex justify-content-center'>
-                    <a href="#FAQS" className="btn-book animate_animated animate_fadeInUp" style={{ borderRadius: '10px' }}>FAQ</a>
+                    <a href="#FAQS" className="btn-book animate_animated animate_fadeInUp" style={{ borderRadius: '10px' }} onClick={handleFAQClick}>FAQ</a>
                     <div style={{ width: "70px", height: "auto", display: "inline-block" }}></div>
-                    <a href="#book-an-aerem" className="btn-book animate_animated animate_fadeInUp" style={{ borderRadius: '10px' }}>Book Now!</a>
-
+                    <a href="#book-an-aerem" className="btn-book animate_animated animate_fadeInUp" style={{ borderRadius: '10px' }} onClick={handleBookNowClick}>Book Now!</a>
                   </div>
                 </div>
               </div>
