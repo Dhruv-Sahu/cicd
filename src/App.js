@@ -7,7 +7,7 @@ import {
   Route
 } from "react-router-dom";
 // import CustomerInfo from "./Components/CustomerInfo/CustomerInfo";
-import hotjar from 'react-hotjar';
+import { hotjar } from 'react-hotjar';
 import ReactGA from "react-ga4";
 
 
