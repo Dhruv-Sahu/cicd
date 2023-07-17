@@ -1,14 +1,18 @@
 import React, { useEffect } from "react";
 import Home from "./Components/Home";
-import Prebook from "./Components/Prebook";
+// import Prebook from "./Components/Prebook";
 import {
   BrowserRouter as Router,
   Routes,
   Route
 } from "react-router-dom";
-import CustomerInfo from "./Components/CustomerInfo/CustomerInfo";
-
+// import CustomerInfo from "./Components/CustomerInfo/CustomerInfo";
+import hotjar from 'react-hotjar';
 import ReactGA from "react-ga4";
+
+
+
+hotjar.initialize('3575186')
 ReactGA.initialize("G-KMGRJZSFQK");
 
 function App() {
