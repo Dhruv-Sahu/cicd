@@ -1,5 +1,7 @@
 import React, { useEffect } from "react";
 import Home from "./Components/Home";
+import TermsAndConditions from "./Components/TC";
+
 // import Prebook from "./Components/Prebook";
 import {
   BrowserRouter as Router,
@@ -34,7 +36,7 @@ function App() {
       <Router>
         <Routes>
           <Route exact path="/" element={<Home />} />
-          {/* <Route exact path="/prebook" element={<Prebook />} /> */}
+          <Route exact path="/TC" element={<TermsAndConditions />} />
           {/* <Route exact path="/customerInfo" element={<CustomerInfo />} /> */}
         </Routes>
       </Router>

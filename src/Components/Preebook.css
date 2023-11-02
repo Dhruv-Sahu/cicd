@@ -24,7 +24,7 @@
 
   .container-road .btn {
     position: absolute;
-    top: 26%;
+    top: 15%;
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -40,18 +40,20 @@
     cursor: pointer;
     border-radius: 10px;
     width: 15rem;
+    
   }
   .btn:hover {opacity: 1}
 
   @media screen and (max-width:767px) {
     .container-road .btn {
-      height: 25px;
+      height: 26px;
       width: 95px;
       font-size: 12px;
-      top:85%;
+      top:63%;
       left: 50%;
       padding: 5px 12px;
       text-align: center;
-      margin-top: -145px;
+      margin-top: -30%;
     }
     }
+    /* -147px */

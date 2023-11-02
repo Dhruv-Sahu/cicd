@@ -42,6 +42,9 @@ const Footer = () => {
           <div className="credits">
             Designed by <a href="/">Climec Labs</a>
           </div>
+          <div className="credits">
+            ***<a href="/TC">Terms And Conditions </a>applied!
+          </div>
         </div>
         <div><form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_L2725XzopLUGA5" async> </script> </form></div>
       </footer>

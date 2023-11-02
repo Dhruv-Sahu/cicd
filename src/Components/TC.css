@@ -1,0 +1,56 @@
+
+.terms-and-conditions-container {
+    background-color: #112b3c;
+    padding: 10%;
+    color: white;
+    min-height: 100vh;
+    text-align: center;
+  }
+  
+  .page-heading {
+    color: #1fbe50;
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+
+  .page-heading-2 {
+    color: #1fbe50;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .terms-and-conditions-content {
+    font-size: 16px;
+  }
+  
+  @media screen and (max-width:767px) {
+    .terms-and-conditions-container {
+      padding: 20%;
+    }
+    }
+  /* You can add more styles as needed */
+  .custom-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  .custom-table th,
+  .custom-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .custom-table th {
+    /* background-color: #f2f2f2; */
+  }
+  
+  .custom-table tr:nth-child(even) {
+    /* background-color: #f2f2f2; */
+  }
+  
+  .custom-table tr:hover {
+    /* background-color: #ddd; */
+  }
+  
