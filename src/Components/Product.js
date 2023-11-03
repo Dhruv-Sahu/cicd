@@ -105,7 +105,7 @@ const Product = () => {
                   <div className='d-flex justify-content-center'>
                     <a href="#FAQS" className="btn-book animate_animated animate_fadeInUp" style={{ borderRadius: '10px' }} onClick={handleFAQClick}>FAQ</a>
                     <div style={{ width: "70px", height: "auto", display: "inline-block" }}></div>
-                    <a href="#book-an-aerem" className="btn-book animate_animated animate_fadeInUp" style={{ borderRadius: '10px' }} onClick={handleBookNowClick}>Book Now!</a>
+                    <a href="https://rzp.io/l/2Jp56Sc" className="btn-book animate_animated animate_fadeInUp" style={{ borderRadius: '10px' }} onClick={handleBookNowClick}>Buy Now!</a>
                   </div>
                 </div>
               </div>

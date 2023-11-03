@@ -46,7 +46,7 @@ const Home = () => {
                     <h2 className="animate__animated animate__fadeInDown contenttop"><span></span></h2>
                     <p className="animate__animated animate__fadeInUp" style={{ fontWeight: "450", fontSize: "17px" }}>Climec Labs is an organic brand that offers an eco-friendly yet affordable solution to enhance indoor air quality. We take it upon ourselves to add a fresh breath of air into your lives!</p>
                     <div>
-                      <a href="#book-an-aerem" className="btn-book animate__animated animate__fadeInUp scrollto" style={{ borderRadius: '10px' }} onClick={handleBookNowClick}>Book Now!</a>
+                      <a href="https://rzp.io/l/2Jp56Sc" className="btn-book animate__animated animate__fadeInUp scrollto" style={{ borderRadius: '10px' }} onClick={handleBookNowClick}>Buy Now!</a>
                     </div>
                   </div>
                 </div>
