@@ -8,7 +8,7 @@ const Contact = () => {
 
           <div className="section-title">
             <h2><span>Contact</span> Us</h2>
-            <p>We'll be lucky to meet You!</p>
+            <p>We'll be happy to hear from you!</p>
           </div>
         </div>
 

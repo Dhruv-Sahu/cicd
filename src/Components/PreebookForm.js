@@ -50,7 +50,7 @@ const PreebookForm = () => {
 
   return (
     <div className='container-road' id="book-an-aerem">
-      <a href="https://rzp.io/l/2Jp56Sc"><button className='btn' onClick={handlePayment} id="roadmap">**Buy Now!</button></a>
+      <a href="https://rzp.io/l/2Jp56Sc"><button className='btn' onClick={handlePayment} id="roadmap">Buy Now!</button></a>
       {/* <button className='btn' onClick={handlePayment} id="roadmap">Pre-Book</button> */}
       <img src={Himage}></img>
       <div>
