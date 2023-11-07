@@ -39,7 +39,7 @@ const PreebookForm = () => {
   // }
 
   const handlePayment = () => {
-    console.log("payment evoked");
+    // console.log("payment evoked");
     ReactGA.event({
       category: 'Clicked the payment button from book an aerem',
       action: 'Razorpay Button Clicked',

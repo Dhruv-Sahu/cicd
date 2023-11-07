@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import ReactGa from 'react-ga4'
 import ap from '../Assets/Image/A1min.png'
-import ag from '../Assets/Image/AeremGo.gif'
+import ag from '../Assets/Image/aeremgo.png'
 import a1 from '../Assets/Image/a12.png'
 import ak from '../Assets/Image/NewPurifier2.jpeg'
 import './Product.css'
@@ -26,7 +26,7 @@ const Product = () => {
     setAeremgocolor({ backgroundColor: "black", color: "white" })
   }
   const handleBookNowClick = () => {
-    console.log("FAQ Button Clicked")
+    // console.log("FAQ Button Clicked")
     ReactGa.event({
       category: "Button Clicked from Product Page",
       action: "Product FAQ Button",
@@ -34,7 +34,7 @@ const Product = () => {
     });
   };
   const handleFAQClick = () => {
-    console.log("book now clicked from product")
+    // console.log("book now clicked from product")
     ReactGa.event({
       category: "Button Clicked from Product Page",
       action: "Product BookNow Button",
@@ -42,7 +42,7 @@ const Product = () => {
     });
   };
   const handleView = () => {
-    console.log("Product see button")
+    // console.log("Product see button")
     ReactGa.event({
       category: "Button for next pic",
       action: "Product Image slider button",
@@ -65,14 +65,13 @@ const Product = () => {
                   <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
                     <div className="carousel-inner" data-bs-interval="false">
                       <div className="carousel-item active" data-bs-interval="false">
-                        {product.value === 0 && <img src={ak} className="d-block w-100" alt="..." style={{ maxWidth: "80%", border: "5px solid transparent", borderColor: "#1fc050", borderRadius: "5px", marginLeft: "52px" }} data-bs-interval="false" />}
+                        {product.value === 0 && <img src={ak} className="d-block w-100" alt="..." style={{ height: "auto", maxWidth: "80%", borderRadius: "5px", marginLeft: "52px" }} data-bs-interval="false" />}
 
-                        {product.value === 1 && <img src={ag} className="d-block w-100" alt="..." style={{ maxWidth: "80%", border: "5px solid transparent", borderColor: "#1fc050", borderRadius: "5px", marginLeft: "52px" }} data-bs-interval="false" />}
+                        {product.value === 1 && <img src={ag} className="d-block w-100" alt="..." style={{ height: "auto", maxWidth: "80%", borderRadius: "5px", marginLeft: "52px" }} data-bs-interval="false" />}
                       </div>
                       <div className="carousel-item">
-                        {product.value === 0 && <img src={a1} className="d-block w-100" alt="..." style={{ height: "450px", maxWidth: "80%", border: "5px solid transparent", borderColor: "#1fc050", borderRadius: "5px", marginLeft: "52px" }} data-bs-interval="false" />}
-                        {product.value === 1 && <img src={ap} className="d-block w-100" alt="..." style={{ height: "400px", maxWidth: "80%", border: "5px solid transparent", borderColor: "#1fc050", borderRadius: "5px", marginLeft: "52px" }} data-bs-interval="false" />}
-
+                        {product.value === 0 && <img src={a1} className="d-block w-100" alt="..." style={{ height: "400px", maxWidth: "80%", borderRadius: "5px", marginLeft: "52px" }} data-bs-interval="false" />}
+                        {product.value === 1 && <img src={ap} className="d-block w-100" alt="..." style={{ height: "400px", maxWidth: "80%", borderRadius: "5px", marginLeft: "52px" }} data-bs-interval="false" />}
                       </div>
                     </div>
                     <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev" data-bs-interval="false" onClick={handleView}><span className="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -91,7 +90,6 @@ const Product = () => {
                     <p><span>({product.booking})</span></p>
                   </div>
                   <p className="fst-italic">
-
                     {product.description}
                   </p>
                   <ul>

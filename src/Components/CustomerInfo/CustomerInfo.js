@@ -80,7 +80,7 @@ const CustomerInfo = () => {
     }
 
     useEffect(() => {
-        console.log(formErrors);
+        // console.log(formErrors);
         if (Object.keys(formErrors).length === 0 && isSubmit) {
             console.log(formValues)
         }
@@ -122,7 +122,7 @@ const CustomerInfo = () => {
 
     const handlePayment = (e) => {
         e.preventDefault();
-        console.log("Payment Evoked")
+        // console.log("Payment Evoked")
         const amount = 270000 * formValues.quantity;
         if (amount === "") {
             alert("please enter amount");

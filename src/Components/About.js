@@ -12,7 +12,7 @@ const About = () => {
               <br /><br />
 
               <iframe className="frame-video" width="560" height="315" src="https://www.youtube.com/embed/Il0yLPAoqO8?si=F_f9iBDH8-qZG-ks?playlist=LZ-LKBsbAA4&loop=1"
-                title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen style={{ border: "10px solid transparent", borderColor: "#1fc050", borderRadius: "15px", width: "100%" }}></iframe>
+                title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen style={{ border: "1px solid transparent", borderColor: "#1fc050", borderRadius: "15px", width: "100%" }}></iframe>
             </div>
 
             <div className="col-lg-7 d-flex flex-column justify-content-center align-items-stretch">

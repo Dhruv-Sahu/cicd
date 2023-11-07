@@ -10,7 +10,7 @@ const Footer = () => {
     });
   };
   const handleIGClick = () => {
-    console.log("IG Button Clicked")
+    // console.log("IG Button Clicked")
     ReactGA.event({
       category: "Button Clicked from Product Page",
       action: "IG Button",
@@ -18,7 +18,7 @@ const Footer = () => {
     });
   };
   const handleLKClick = () => {
-    console.log("LK Button Clicked")
+    // console.log("LK Button Clicked")
     ReactGA.event({
       category: "Button Clicked from Product Page",
       action: "Product FAQ Button",
@@ -43,7 +43,7 @@ const Footer = () => {
             Designed by <a href="/">Climec Labs</a>
           </div>
           <div className="credits">
-            ***<a href="/TC">Terms And Conditions </a>applied!
+            <a href="/TC">Terms And Conditions </a>applied!
           </div>
         </div>
         <div><form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_L2725XzopLUGA5" async> </script> </form></div>

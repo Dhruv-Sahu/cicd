@@ -43,7 +43,7 @@ const Contact = () => {
                 <a href='tel:+919123580564'>
                   <i className="bi bi-phone"></i>
                   <h4>Call:</h4>
-                  <p>+919123580564</p>
+                  <p>+91 9123580564</p>
                 </a>
               </div>
             </div>
