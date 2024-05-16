@@ -72,7 +72,7 @@ const Gallery = () => {
 
               <div className="gallery-item ">
                 <a href="https://dst.gov.in/" target="_blank" className="gallery-lightbox">
-                  <img src={require("../Assets/Image/DST3.png")} alt="" className="img-fluid " style={{ borderRadius: '45px', blockSize: '200px' }} />
+                  <img src={require("../Assets/Image/DST3.png")} alt="" className="img-fluid " style={{  blockSize: '200px' }} />
                 </a>
               </div>
             </div>
@@ -81,6 +81,40 @@ const Gallery = () => {
               <div className="gallery-item ">
                 <a href="https://www.startupindia.gov.in/" target="_blank" className="gallery-lightbox">
                   <img src={require("../Assets/Image/StartupIndia.png")} alt="" className="img-fluid " style={{ borderRadius: '45px', blockSize: '200px', marginRight: 'auto' }} />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="row g-0">
+            <div className="col-lg-3 col-md-4">
+
+              <div className="gallery-item ">
+                <a href="https://www.startupnexus.in/" target="_blank" className="gallery-lightbox">
+                  <img src={require("../Assets/Image/Nexus.png")} alt="" className="img-fluid " style={{ borderRadius: '45px', blockSize: '200px',  marginLeft: '15px', marginTop:"10px" }} />
+                </a>
+              </div>
+            </div>
+            <div className="col-lg-3 col-md-4">
+
+              <div className="gallery-item ">
+                <a href="https://siicincubator.com/index.php" target="_blank" className="gallery-lightbox">
+                  <img src={require("../Assets/Image/IITK.png")} alt="" className="img-fluid " style={{ borderRadius: '45px', blockSize: '200px', marginTop: '10px' }} />
+                </a>
+              </div>
+            </div>
+            <div className="col-lg-3 col-md-4">
+
+              <div className="gallery-item ">
+                <a href="https://nsrcel.org/" target="_blank" className="gallery-lightbox">
+                  <img src={require("../Assets/Image/NSRCEL2.png")} alt="" className="img-fluid " style={{ borderRadius: '45px', blockSize: '200px', marginTop: '10px'}} />
+                </a>
+              </div>
+            </div>
+            <div className="col-lg-3 col-md-4">
+
+              <div className="gallery-item ">
+                <a href="https://events.withgoogle.com/startups-for-sustainable-development/" target="_blank" className="gallery-lightbox">
+                  <img src={require("../Assets/Image/Google.png")} alt="" className="img-fluid " style={{  blockSize: '200px', marginRight: 'auto', marginTop: '10px' }} />
                 </a>
               </div>
             </div>
