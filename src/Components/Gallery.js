@@ -11,14 +11,47 @@ const Gallery = () => {
             <h2>Supporters for <span>Climec Labs</span></h2>
             <p>Be a Part of our Journey!</p>
           </div>
+          <div className="row g-0">
+            <div className="col-lg-3 col-md-4">
 
+              <div className="gallery-item ">
+                <a href="https://www.startupnexus.in/" target="_blank" className="gallery-lightbox">
+                  <img src={require("../Assets/Image/Nexus.png")} alt="" className="img-fluid " style={{ borderRadius: '45px', blockSize: '200px',  marginLeft: '15px', marginTop:"10px" }} />
+                </a>
+              </div>
+            </div>
+            <div className="col-lg-3 col-md-4">
+
+              <div className="gallery-item ">
+                <a href="https://siicincubator.com/index.php" target="_blank" className="gallery-lightbox">
+                  <img src={require("../Assets/Image/IITK.png")} alt="" className="img-fluid " style={{ borderRadius: '45px', blockSize: '200px', marginTop: '10px' }} />
+                </a>
+              </div>
+            </div>
+            <div className="col-lg-3 col-md-4">
+
+              <div className="gallery-item ">
+                <a href="https://nsrcel.org/" target="_blank" className="gallery-lightbox">
+                  <img src={require("../Assets/Image/NSRCEL2.png")} alt="" className="img-fluid " style={{ borderRadius: '45px', blockSize: '200px', marginTop: '13px'}} />
+                </a>
+              </div>
+            </div>
+            <div className="col-lg-3 col-md-4">
+
+              <div className="gallery-item ">
+                <a href="https://events.withgoogle.com/startups-for-sustainable-development/" target="_blank" className="gallery-lightbox">
+                  <img src={require("../Assets/Image/Google.png")} alt="" className="img-fluid " style={{  blockSize: '200px', marginRight: 'auto', marginTop: '10px' }} />
+                </a>
+              </div>
+            </div>
+          </div>
           <div className="row g-0">
 
             <div className="col-lg-3 col-md-4">
 
               <div className="gallery-item ">
                 <a href="https://www.srmiic.com/" target="_blank" className="gallery-lightbox">
-                  <img src={require("../Assets/Image/index-removebg-preview.png")} alt="" className="img-fluid " style={{ borderRadius: '45px', blockSize: '200px', marginLeft: '30px', marginBottom: "50px" }} />
+                  <img src={require("../Assets/Image/index-removebg-preview.png")} alt="" className="img-fluid " style={{ borderRadius: '45px', blockSize: '200px', marginLeft: '30px', marginBottom: "50px", marginTop: '10px' }} />
 
                 </a>
               </div>
@@ -28,7 +61,7 @@ const Gallery = () => {
 
                 <a href="https://www.mic.gov.in/" target="_blank" className="gallery-lightbox">
                   {/* <h6 style={{ textAlign: 'left', padding: '10px' }}>IINC</h6> */}
-                  <img src={require("../Assets/Image/iinc-removebg-preview.png")} alt="" className="img-fluid " style={{ borderRadius: '45px', blockSize: '200px' }} />
+                  <img src={require("../Assets/Image/iinc-removebg-preview.png")} alt="" className="img-fluid " style={{ borderRadius: '45px', blockSize: '200px', marginTop: '10px' }} />
                 </a>
               </div>
             </div>
@@ -38,7 +71,7 @@ const Gallery = () => {
 
                 <a href="https://www.mic.gov.in/" target="_blank" className="gallery-lightbox ">
                   {/* <h6 style={{ textAlign: 'left', padding: '10px' }}>National Winner NIC!</h6> */}
-                  <img src={require("../Assets/Image/moe-removebg-preview.png")} alt="" className="img-fluid " style={{ borderRadius: '45px', blockSize: '200px' }} />
+                  <img src={require("../Assets/Image/moe-removebg-preview.png")} alt="" className="img-fluid " style={{ borderRadius: '45px', blockSize: '200px' , marginTop: '10px'}} />
                 </a>
               </div>
             </div>
@@ -46,7 +79,7 @@ const Gallery = () => {
               <div className="gallery-item ">
 
                 <a href="https://www.aicte-india.org/" target="_blank" className="gallery-lightbox">
-                  <img src={require("../Assets/Image/AICTE-removebg-preview.png")} alt="" className="img-fluid " style={{ borderRadius: '45px', blockSize: '200px', marginRight: "auto" }} />
+                  <img src={require("../Assets/Image/AICTE-removebg-preview.png")} alt="" className="img-fluid " style={{ borderRadius: '45px', blockSize: '200px', marginRight: "auto" , marginTop: '10px'}} />
                 </a>
               </div>
             </div>
@@ -85,40 +118,7 @@ const Gallery = () => {
               </div>
             </div>
           </div>
-          <div className="row g-0">
-            <div className="col-lg-3 col-md-4">
-
-              <div className="gallery-item ">
-                <a href="https://www.startupnexus.in/" target="_blank" className="gallery-lightbox">
-                  <img src={require("../Assets/Image/Nexus.png")} alt="" className="img-fluid " style={{ borderRadius: '45px', blockSize: '200px',  marginLeft: '15px', marginTop:"10px" }} />
-                </a>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-4">
-
-              <div className="gallery-item ">
-                <a href="https://siicincubator.com/index.php" target="_blank" className="gallery-lightbox">
-                  <img src={require("../Assets/Image/IITK.png")} alt="" className="img-fluid " style={{ borderRadius: '45px', blockSize: '200px', marginTop: '10px' }} />
-                </a>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-4">
-
-              <div className="gallery-item ">
-                <a href="https://nsrcel.org/" target="_blank" className="gallery-lightbox">
-                  <img src={require("../Assets/Image/NSRCEL2.png")} alt="" className="img-fluid " style={{ borderRadius: '45px', blockSize: '200px', marginTop: '10px'}} />
-                </a>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-4">
-
-              <div className="gallery-item ">
-                <a href="https://events.withgoogle.com/startups-for-sustainable-development/" target="_blank" className="gallery-lightbox">
-                  <img src={require("../Assets/Image/Google.png")} alt="" className="img-fluid " style={{  blockSize: '200px', marginRight: 'auto', marginTop: '10px' }} />
-                </a>
-              </div>
-            </div>
-          </div>
+          
         </div>
       </section>
     </>
