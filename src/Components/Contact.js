@@ -24,11 +24,11 @@ const Contact = () => {
               </div>
 
               <div className="col-lg-3 col-md-6 info mt-4 mt-lg-0">
-                <a>
+                <>
                   <i className="bi bi-clock"></i>
                   <h4>Open Hours:</h4>
                   <p>Monday-Saturday:<br />09:00 AM - 18:00 PM</p>
-                </a>
+                </>
               </div>
 
               <div className="col-lg-3 col-md-6 info mt-4 mt-lg-0">
