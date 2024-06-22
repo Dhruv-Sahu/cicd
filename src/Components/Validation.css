@@ -1,0 +1,97 @@
+/* Centering the entire container */
+.v-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Styling for the form */
+.v-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%; /* Slightly reduced width for better responsiveness */
+  max-width: 600px; /* Maximum width to prevent excessive stretching */
+}
+
+.v-formGroup {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.v-formRow {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.v-formRow .v-label {
+  margin-bottom: 5px;
+  text-align: left;
+  width: calc(33.33% - 10px); /* One-third width with spacing */
+}
+
+/* Styling for inputs */
+.v-input {
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.v-thirdInput {
+  width: calc(33.33% - 10px); /* One-third width with spacing */
+}
+
+.v-fullInput {
+  width: 100%; /* Full width for the message input */
+}
+
+.v-submitButton:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+/* Error message styling */
+.v-errorMessage {
+  margin: 0;
+  color: red;
+}
+
+/* Success message styling */
+.v-successMessage {
+  font-size: 18px;
+  color: green;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .v-formRow {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .v-formRow .v-label,
+  .v-thirdInput {
+    width: 100%;
+  }
+}
+
+.v-submitButton:hover {
+  background: #1f7713;
+  color: #fff;
+}
+
+.v-submitButton {
+  padding: 10px 20px;
+  background: #1fc050;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px; /* Add some space above the button */
+}

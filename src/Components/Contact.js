@@ -1,13 +1,15 @@
-import React,{useState} from 'react'
-import InputValidation from './Validation'
-import { collectionGroup } from 'firebase/firestore';
+import React, { useState } from 'react';
+import InputValidation from './Validation';
 
 const Contact = () => {
+  const [Cname, setName] = useState('');
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
   const [message, setMessage] = useState('');
-  // console.log(message)
-  
+
+  const handleNameChange = (event) => {
+    setName(event.target.value);
+  };
 
   const handleEmailChange = (event) => {
     setEmail(event.target.value);
@@ -18,14 +20,11 @@ const Contact = () => {
   };
 
   const handleMessageChange = (event) => {
-    // console.log('hi from the function')
     setMessage(event.target.value);
-    console.log(message,"from contact.js")
   };
 
   const handleSubmit = () => {
-    // Handle form submission, e.g., send data to the server
-    alert(`Submitted:\nEmail: ${email}\nPhone: ${phone}\nMessage: ${message}`);
+    console.log(`Submitted:\nName: ${Cname} \nEmail: ${email}\nPhone: ${phone}\nMessage: ${message}`);
   };
 
   return (
@@ -42,7 +41,7 @@ const Contact = () => {
           <div className="info-wrap">
             <div className="row">
               <div className="col-lg-3 col-md-6 info">
-                <a target="_blank" href='https://goo.gl/maps/q44rBwspUtU5HuK26' >
+                <a target="_blank" href='https://goo.gl/maps/q44rBwspUtU5HuK26'>
                   <i className="bi bi-geo-alt"></i>
                   <h4>Location:</h4>
                   <p>3rd floor, SIDC<br />Main Campus, SRMIST, Chennai, 603203</p>
@@ -50,11 +49,9 @@ const Contact = () => {
               </div>
 
               <div className="col-lg-3 col-md-6 info mt-4 mt-lg-0">
-                <>
-                  <i className="bi bi-clock"></i>
-                  <h4>Open Hours:</h4>
-                  <p>Monday-Saturday:<br />09:00 AM - 18:00 PM</p>
-                </>
+                <i className="bi bi-clock"></i>
+                <h4>Open Hours:</h4>
+                <p>Monday-Saturday:<br />09:00 AM - 18:00 PM</p>
               </div>
 
               <div className="col-lg-3 col-md-6 info mt-4 mt-lg-0">
@@ -74,36 +71,22 @@ const Contact = () => {
               </div>
             </div>
           </div>
-
-
-
         </div>
-        <br/>
-        <br/>
-        <div className="container">
 
+        <div className="container mt-5">
           <div className="section-title">
             <h2><span>Query</span></h2>
             <p>We'll be happy to assist you!</p>
           </div>
-          {/* <form>
-            <label>Full Name</label>
-            <input type='text' id="fname" name='full_name' ></input>
-            <label>Email ID</label>
-            <input type='email' id="email" name='email_id' ></input>
-            <label>Phone</label>
-            <input type='.' id="phone" name='phone_number' ></input>
-            <br/>
-            <label>Your Query</label>
-            <br/>
-            <textarea id="query" name='query' rows={4} cols={100}></textarea>
-          </form> */}
+
           <InputValidation
+            Cname={Cname}
             email={email}
             phone={phone}
             message={message}
+            onNameChange={handleNameChange}
             onEmailChange={handleEmailChange}
-            onPhoneChange={handlePhoneChange}
+            onPhoneChange={handlePhoneChange} 
             onMessageChange={handleMessageChange}
             onSubmit={handleSubmit}
           />
@@ -113,4 +96,4 @@ const Contact = () => {
   )
 }
 
-export default Contact
+export default Contact;
