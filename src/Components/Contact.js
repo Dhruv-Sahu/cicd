@@ -41,7 +41,7 @@ const Contact = () => {
           <div className="info-wrap">
             <div className="row">
               <div className="col-lg-3 col-md-6 info">
-                <a target="_blank" href='https://goo.gl/maps/q44rBwspUtU5HuK26'>
+                <a target="_blank" href='https://goo.gl/maps/q44rBwspUtU5HuK26' rel="noreferrer">
                   <i className="bi bi-geo-alt"></i>
                   <h4>Location:</h4>
                   <p>3rd floor, SIDC<br />Main Campus, SRMIST, Chennai, 603203</p>

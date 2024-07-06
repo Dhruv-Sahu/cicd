@@ -1,12 +1,12 @@
-import React, { useState } from 'react'
+import React, {useState} from 'react'
 import Himage from '../Assets/Image/1.png'
-import Link from 'react-router-dom'
+// import Link from 'react-router-dom'
 import "./Preebook.css"
-import { useNavigate } from 'react-router-dom'
+// import { useNavigate } from 'react-router-dom'
 import ReactGA from "react-ga4";
 
 const PreebookForm = () => {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   // const [feedback, setFeedback] = useState({ name: "", phone: "", email: "", message: "" })
   // const [amount, setAmount] = useState(5000)
   const [buttonname, setbuttonname] = useState("Pre-Book")
@@ -52,7 +52,7 @@ const PreebookForm = () => {
     <div className='container-road' id="book-an-aerem">
       <a href="https://forms.fillout.com/t/8iYctbZ9AAus"><button className='btn' onClick={handlePayment} id="roadmap">Sign up!</button></a>
       {/* <button className='btn' onClick={handlePayment} id="roadmap">Pre-Book</button> */}
-      <img src={Himage} alt="Aerem Model A and B Image"></img>
+      <img src={Himage} alt="Aerem Model A and B"></img>
       <div>
       </div>
     </div>

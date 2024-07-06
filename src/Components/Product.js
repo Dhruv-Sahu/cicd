@@ -8,23 +8,23 @@ import './Product.css'
 
 
 const Product = () => {
-  let AEREM1 = { "firstName": "AEREM Model A", "description": "Air quality of a jungle inside your four walls!", "point1": 'Oxygen generation of 22 trees!.', "point2": 'Viable & Eco-Friendly Solution.', "point3": 'Subscription cost of the filter is as low as Rs. 1.', "description2": "India's first Oxygen generating air purifier Provides you with oxygen worth of 22 trees while sequestering carbon dioxide and creating hyperlocal clean air zone." };
-  let AEREMGO = { "firstName": "AEREM-GO ", "description": "Made with ❤ for your workspace", "point1": 'Inbuilt Planter.', "point2": 'Portable.', "point3": 'Smart Auto Purification', "description2": "A portable air purifier designed specially to reduce fatigue, stress and increases productivity & attention span, all this while imporving the air quality of your workspace" };
+  // let AEREM1 = { "firstName": "AEREM Model A", "description": "Air quality of a jungle inside your four walls!", "point1": 'Oxygen generation of 22 trees!.', "point2": 'Viable & Eco-Friendly Solution.', "point3": 'Subscription cost of the filter is as low as Rs. 1.', "description2": "India's first Oxygen generating air purifier Provides you with oxygen worth of 22 trees while sequestering carbon dioxide and creating hyperlocal clean air zone." };
+  // let AEREMGO = { "firstName": "AEREM-GO ", "description": "Made with ❤ for your workspace", "point1": 'Inbuilt Planter.', "point2": 'Portable.', "point3": 'Smart Auto Purification', "description2": "A portable air purifier designed specially to reduce fatigue, stress and increases productivity & attention span, all this while imporving the air quality of your workspace" };
   const [product, setProduct] = useState({ firstName: "AEREM Go ", value: 1, booking: "Bookings have started!", description: "Made with ❤ for your workspace", point1: 'Inbuilt Planter.', point2: 'Portable.', point3: 'Smart Auto Purification', description2: "A portable air purifier designed specially to reduce fatigue, stress and increases productivity & attention span, all this while imporving the air quality of your workspace." })
-  const [aeremcolor, setAeremcolor] = useState({ backgroundColor: "black", color: "white" })
-  const [aeremgocolor, setAeremgocolor] = useState({ backgroundColor: "#1fc050", color: "white" })
-  const changeToAeremgo = (e) => {
-    e.preventDefault();
-    setProduct({ firstName: "AEREM-GO ", value: 1, booking: "Bookings have started!", description: "Made with ❤ for your workspace", point1: 'Inbuilt Planter.', point2: 'Portable.', point3: 'Smart Auto Purification', description2: "A portable air purifier designed specially to reduce fatigue, stress and increases productivity & attention span, all this while imporving the air quality of your workspace." })
-    setAeremgocolor({ backgroundColor: "#1fc050", color: "white" })
-    setAeremcolor({ backgroundColor: "black", color: "white" })
-  }
-  const changeToAerem = (e) => {
-    e.preventDefault();
-    setProduct({ firstName: "AEREM Model A", value: 0, booking: "Coming Soon", description: "Air quality of a jungle inside your four walls!", point1: 'O2 Production equates to 22 trees!', point2: 'Tailored and Customisable filters!', point3: 'Subscription cost of the filter is as low as Rs. 1!', description2: "India's first Oxygen generating air purifier provides you with oxygen worth of 22 trees while sequestering carbon dioxide worth 6 trees. The bio-filter's lifetime is about 4-6 months and the residue can be used in your houseplants as fertilisers. Predicts and displays CO2 levels along with AQI, with the help of IoT through mobile app." })
-    setAeremcolor({ backgroundColor: "#1fc050", color: "white" })
-    setAeremgocolor({ backgroundColor: "black", color: "white" })
-  }
+  // const [aeremcolor, setAeremcolor] = useState({ backgroundColor: "black", color: "white" })
+  // const [aeremgocolor, setAeremgocolor] = useState({ backgroundColor: "#1fc050", color: "white" })
+  // const changeToAeremgo = (e) => {
+  //   e.preventDefault();
+  //   setProduct({ firstName: "AEREM-GO ", value: 1, booking: "Bookings have started!", description: "Made with ❤ for your workspace", point1: 'Inbuilt Planter.', point2: 'Portable.', point3: 'Smart Auto Purification', description2: "A portable air purifier designed specially to reduce fatigue, stress and increases productivity & attention span, all this while imporving the air quality of your workspace." })
+  //   setAeremgocolor({ backgroundColor: "#1fc050", color: "white" })
+  //   setAeremcolor({ backgroundColor: "black", color: "white" })
+  // }
+  // const changeToAerem = (e) => {
+  //   e.preventDefault();
+  //   setProduct({ firstName: "AEREM Model A", value: 0, booking: "Coming Soon", description: "Air quality of a jungle inside your four walls!", point1: 'O2 Production equates to 22 trees!', point2: 'Tailored and Customisable filters!', point3: 'Subscription cost of the filter is as low as Rs. 1!', description2: "India's first Oxygen generating air purifier provides you with oxygen worth of 22 trees while sequestering carbon dioxide worth 6 trees. The bio-filter's lifetime is about 4-6 months and the residue can be used in your houseplants as fertilisers. Predicts and displays CO2 levels along with AQI, with the help of IoT through mobile app." })
+  //   setAeremcolor({ backgroundColor: "#1fc050", color: "white" })
+  //   setAeremgocolor({ backgroundColor: "black", color: "white" })
+  // }
   const handleBookNowClick = () => {
     // console.log("FAQ Button Clicked")
     ReactGa.event({

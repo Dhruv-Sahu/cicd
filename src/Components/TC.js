@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import './TC.css';
 
 const TermsAndConditions = () => {
@@ -30,7 +30,7 @@ const TermsAndConditions = () => {
                     We reserve the right to discontinue or make changes or updates with respect to the Web Site or the Content of the Web Site at any time without prior notice. We reserve the right to restrict, refuse, suspend or terminate access of any person to the Web Site or any part thereof effective immediately without notice at any time and for any reason whatsoever at our sole discretion.
                 </span><br /><br />
                 <h1 className="page-heading-2">Privacy Policy: </h1>
-                <span>Personal information provided or collected through or in connection with this Web Site shall only be used in accordance with our Privacy Policy and these Terms of Use are subject to the Privacy Policy as posted on this Web Site. <a>www.climeclabs.com/TC</a></span><br /><br />
+                <span>Personal information provided or collected through or in connection with this Web Site shall only be used in accordance with our Privacy Policy and these Terms of Use are subject to the Privacy Policy as posted on this Web Site. <a href='/TC'>www.climeclabs.com/TC</a></span><br /><br />
                 <h1 className="page-heading-2">Age Restriction: </h1>
                 <span>You must be at least 18 (eighteen) years of age in order to use the website or for the services contained herein. By using the website, you hereby represent and warrant that you are at least 18 years of age and legally agree to these terms of services/ We assume no liability or responsibility for any such misrepresentation of your age</span><br /><br />
                 <h1 className="page-heading-2">Disclaimers: </h1>

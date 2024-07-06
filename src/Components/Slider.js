@@ -7,8 +7,7 @@ const Slider = () => {
             borderColor: "#eee", backgroundColor: "rgb(255,247,236)",
 
         }}><div style={{
-            display: 'grid', background: "rgb(255,247,236)",
-            background: "#112B3C"
+            display: 'grid', background: "#112B3C"
         }} className={styles.wordCarousel}>
                 <span style={{ textAlign: "center" }} >Did You Know? </span>
                 <div>
