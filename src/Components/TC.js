@@ -55,6 +55,9 @@ const TermsAndConditions = () => {
                     In case of cash on delivery or card on delivery, the order amount has to be paid in full before receiving the package and signing the delivery sheet. The package can be opened only after the full payment is made to Us or the concerned delivery agent.<br /><br />
                     We reserve our right to refuse to sell the products listed on the website at our sole discretion to anyone for any reason whatsoever.<br /><br />
                 </span>
+                <h1 className="page-heading-2">Delivery Time: </h1>
+                <span>Delivery Time could range from different shipping methods chosen by you, ranging from 5 - 7 Days by standard delivery, any discrupencies in shipping the product from our side would be informed earlier, Tracking ID would be provided for your knowledge. Any Discrupencies for delivery not being on time, would not be from our side but delivery partner and consecuent ticket would be raised to them. Be assured for full support during the delivery of your product from our side.<br /><br />
+                </span>
                 <h1 className="page-heading-2">Acceptable Use And Contribution: </h1>
                 <span>It is agreed by you that you will not to use the Website or Services for any unlawful purpose or any purpose prohibited under this clause. You agree not to use the Website or Services in any way that could damage the Website, Services or general business of the Climeclabs.<br /><br /></span>
                 <span>You further agree not to use the Website or Services:</span><br /><br />
