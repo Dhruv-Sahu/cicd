@@ -32,7 +32,7 @@ const Gallery = () => {
 
               <div className="gallery-item ">
                 <a href="https://nsrcel.org/" target="_blank" className="gallery-lightbox" rel="noreferrer">
-                  <img src={require("../Assets/Image/NSRCEL2.png")} alt="" className="img-fluid " style={{ borderRadius: '45px', blockSize: '200px', marginTop: '13px'}} />
+                  <img src={require("../Assets/Image/NLogo.png")} alt="" className="img-fluid " style={{ borderRadius: '45px', blockSize: '200px', marginTop: '13px'}} />
                 </a>
               </div>
             </div>
